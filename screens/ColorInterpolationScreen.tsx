@@ -27,7 +27,7 @@ const SWITCH_TRACK_COLOR = {
   false: "rgba(0, 0, 0, 0.1)",
 };
 
-export const ColorInterpolation = () => {
+export const ColorInterpolationScreen = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const progress = useDerivedValue(

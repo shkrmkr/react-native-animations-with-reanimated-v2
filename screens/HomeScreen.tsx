@@ -4,7 +4,7 @@ import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { HomeScreenNavigationProp } from "../navigation/type";
 
-export const Home = () => {
+export const HomeScreen = () => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
@@ -28,6 +28,16 @@ export const Home = () => {
         <Text style={styles.navMenuText}>Scroll Interpolation</Text>
         <Ionicons name="arrow-forward-circle-outline" size={25} />
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.navMenu}
+        onPress={() => {
+          navigation.navigate("PanGestureHandler");
+        }}
+      >
+        <Text style={styles.navMenuText}>PanGestureHandler</Text>
+        <Ionicons name="arrow-forward-circle-outline" size={25} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -48,7 +58,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   navMenuText: {
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: "bold",
     flex: 1,
   },

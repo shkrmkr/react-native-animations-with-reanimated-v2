@@ -1,9 +1,10 @@
 import { Ionicons } from "@expo/vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import { ColorInterpolation } from "../screens/ColorInterpolation";
-import { Home } from "../screens/Home";
-import { ScrollInterpolation } from "../screens/ScrollInterpolation";
+import { ColorInterpolationScreen } from "../screens/ColorInterpolationScreen";
+import { HomeScreen } from "../screens/HomeScreen";
+import { PanGestureHandlerScreen } from "../screens/PanGestureHandlerScreen";
+import { ScrollInterpolationScreen } from "../screens/ScrollInterpolationScreen";
 import { RootStackParamList } from "./type";
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -29,18 +30,22 @@ export const RootStack = () => {
     >
       <Stack.Screen
         name="Home"
-        component={Home}
+        component={HomeScreen}
         options={{ title: "React Native Animations" }}
       />
       <Stack.Screen
         name="ColorInterpolation"
-        component={ColorInterpolation}
+        component={ColorInterpolationScreen}
         options={{ title: "Color Interpolation" }}
       />
       <Stack.Screen
         name="ScrollInterpolation"
-        component={ScrollInterpolation}
+        component={ScrollInterpolationScreen}
         options={{ title: "Scroll Interpolation" }}
+      />
+      <Stack.Screen
+        name="PanGestureHandler"
+        component={PanGestureHandlerScreen}
       />
     </Stack.Navigator>
   );

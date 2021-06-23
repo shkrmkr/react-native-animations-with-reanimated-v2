@@ -4,7 +4,7 @@ import { ListItem } from "../components/ListItem";
 
 const DATA = ["hello", "react", "native", "world", "😄"];
 
-export const ScrollInterpolation = () => {
+export const ScrollInterpolationScreen = () => {
   const translateX = useSharedValue(0);
 
   return (
