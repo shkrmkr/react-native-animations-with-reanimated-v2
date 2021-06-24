@@ -38,6 +38,16 @@ export const HomeScreen = () => {
         <Text style={styles.navMenuText}>PanGestureHandler</Text>
         <Ionicons name="arrow-forward-circle-outline" size={25} />
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.navMenu}
+        onPress={() => {
+          navigation.navigate("PinchGestureHandler");
+        }}
+      >
+        <Text style={styles.navMenuText}>PinchGestureHandler</Text>
+        <Ionicons name="arrow-forward-circle-outline" size={25} />
+      </TouchableOpacity>
     </View>
   );
 };

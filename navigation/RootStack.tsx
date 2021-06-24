@@ -4,6 +4,7 @@ import React from "react";
 import { ColorInterpolationScreen } from "../screens/ColorInterpolationScreen";
 import { HomeScreen } from "../screens/HomeScreen";
 import { PanGestureHandlerScreen } from "../screens/PanGestureHandlerScreen";
+import { PinchGestureHandlerScreen } from "../screens/PinchGestureHandlerScreen";
 import { ScrollInterpolationScreen } from "../screens/ScrollInterpolationScreen";
 import { RootStackParamList } from "./type";
 
@@ -46,6 +47,10 @@ export const RootStack = () => {
       <Stack.Screen
         name="PanGestureHandler"
         component={PanGestureHandlerScreen}
+      />
+      <Stack.Screen
+        name="PinchGestureHandler"
+        component={PinchGestureHandlerScreen}
       />
     </Stack.Navigator>
   );

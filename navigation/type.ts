@@ -5,6 +5,7 @@ export type RootStackParamList = {
   ScrollInterpolation: undefined;
   ColorInterpolation: undefined;
   PanGestureHandler: undefined;
+  PinchGestureHandler: undefined;
 };
 
 export type HomeScreenNavigationProp = StackNavigationProp<
